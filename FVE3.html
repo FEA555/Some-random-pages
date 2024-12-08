@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возможно, Document</title>
+    <link rel="stylesheet" href="Style0_3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="InfLogo">
+            <div>
+                <img src="Барс.jpg" alt="Брс" width="50px">
+                <p>Logo</p>
+            </div>
+            <div>
+                <p>Группа ЭФБО-05-23</p>
+                <p>Фокин Владимир Евгеньевич</p>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="FVE1.html">Главная</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Учеба</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item nav-link active" href="#">Первый семестр</a></li>
+                  <li><a class="dropdown-item nav-link disabled" href="#">Второй семестр</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FVE2.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Авторизация</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <div id="PgNav">
+            <ul> Навигация <br>по странице:
+                <li><a href="#Lections">Лекции</a></li>
+                <li><a href="#Practics">Практики</a></li>
+                <li><a href="#Map">Карта</a></li>
+                <li><a href="#Document">Дополнение</a></li>
+            </ul>
+        </div>
+
+        <div id="MainTxt">
+            <h2 class="NotSoMainHeading">Первый семестр</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <h3 id="Lections">Лекции</h3>
+                <button id="lecButton" class="btn">Посмотреть лекции</button>
+            </div>
+            <table class="table table-striped table-hover TableMain" id="lecTable">
+                <tr class="TableMainRow">
+                    <th>№</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>2</td>
+                    <td>Углубленное изучение HTML</td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>3</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>4</td>
+                    <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>5</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>6</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>7</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>8</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <br>
+            <div style="display: flex; justify-content: space-between;">
+                <h3 id="Practics">Практики</h3>
+                <button id="2semButton" class="btn">Посмотреть практики второго семестра</button>
+            </div>
+            <table class="table table-striped table-hover TableMain" id="pracTable">
+                <tr class="TableMainRow">
+                    <th>№</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Готово</th>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox" checked></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                    <td><input type="checkbox" checked></td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>7</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>8</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>9</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>10</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>11</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>12</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>13</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>14</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableOddRow">
+                    <td>15</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="TableNonOddRow">
+                    <td>16</td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <br>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Практика #1
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            Практика #2
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Практика #3
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Практика #4
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            Практика #5
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                            Практика #6
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                            Практика #7
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                            Практика #8
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Задание на практику:</strong> ААА
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="carouselMemes" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselMemes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselMemes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselMemes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="SnepBlep.jpg" class="d-block w-100" alt="Snep lep blep">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Clown.jpg" class="d-block w-100" alt="Clown nose pic">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Trollface.jpg" class="d-block w-100" alt="Trollface">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemes" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMemes" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+            <br>
+            <h3 id="Map">Занятия проходят по адресу: пр-т Вернаского, 78</h3>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.5239322960933!2d37.47983180029855!3d55.66993546274009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1731441361946!5m2!1sru!2sru" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <h3 id="Document">Очень важный документ!</h3>
+            <div class="container">
+                <object class="block-pdf document" data="EvacPlan.pdf" type="application/pdf" height="750px" width="100%" id="pdffile">
+                    Не сработало... <br> <a href="EvacPlan.pdf">Скачайте</a>, пожалуйста!
+                </object>    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="FooterTxt">&copy; Фокин Владимир Евгеньевич, 2024</div> 
+        <a href="http://www.vk.com/fea555"> <img id="FooterLogo" src="VKLogo.png"> </a>
+    </footer>
+    <script src="Scripts3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

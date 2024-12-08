@@ -1,0 +1,474 @@
+@media screen and (max-width: 500px) {
+    * {
+        padding: 0px;
+        margin: 0px;    /*Отключение стандартного офрмления*/
+        border: none;
+        font-family: "Comic Sans MS", "Comic Sans", cursive; /*Лучший шрифт*/
+    }
+    header {
+        background-color: aquamarine;
+        padding: 30px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid black;
+    }
+    #InfLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        border-bottom: 3px solid black;
+        padding: 5px;
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        width: 100vw;
+    }
+    #PgNav a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    #PgNav a:hover {
+        color: blue;
+    }
+    main {
+        flex-grow: 1; /*Растягивание в высоту основной части*/
+    }
+    .MainHeading {
+        text-shadow: 3px 3px 3px gray;
+        text-decoration: underline;
+    }
+    .NotSoMainHeading {
+        text-shadow: 1px 1px 1px gray;
+        text-decoration: underline;
+    }
+    #PgNav {
+        border-bottom: 3px solid black;
+        padding: 5px;
+    }
+    #MainTxt {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /*Растягивание в ширину текстовой части*/
+    }
+    .MainTxtVid {
+        padding: 10px;
+        width: 100%;
+    }
+    .Exmpls{
+        display: grid;
+        grid-template-columns: 18vw 18vw 18vw 18vw;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    .Exmpl{
+        margin: 10px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*#Exmpl1 {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    #Exmpl2 {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+    #Exmpl3 {
+        grid-row: 2;
+        grid-column: 2/4;
+    }*/
+    .Exmpl:hover {
+        background-color: lightgray;
+    }
+    .ExmplsImg {
+        width: 30vw;  
+    }
+    
+    .ExmplTtl {
+        margin: 5px;
+        font-size: 15px;
+    }
+    .ExmplTxt {
+        font-size: 10px;
+    }
+    .OrderButton{
+        padding: 5px;
+        margin: 5px;
+        margin-top: 0px;
+        border: 2px solid black;
+        background-color: lightgray;
+        box-shadow: 3px 3px 3px gray;
+        cursor: pointer;
+    }
+    .OrderButton:hover{
+        padding: 5px;
+        margin: 5px;
+        margin-top: 0px;
+        border: 2px solid black;
+        background-color: gray;
+        box-shadow: 3px 3px 3px black;
+        cursor: pointer;
+    }
+    footer {
+        border-top: 3px solid black;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    #FooterTxt {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    #FooterLogo {
+        width: 40px;
+        float: right;
+    } 
+    .PopupHidden{
+        display: none;
+    }
+    #OrderPopupBG{
+        position: fixed;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #OrderPopup{
+        padding: 10px;
+        border: 3px solid black;
+        position: fixed;
+        overflow: auto;
+        background-color: white;
+        z-index: 2;
+        top: 10%;
+        left: 1%;
+        right: 1%;
+        bottom: 10%;
+        overflow: auto;
+    }
+    #PopupHeader{
+        display: flex;
+    }
+    #PopupHeaderTxt{
+        flex-grow: 1;
+    }
+    #PopupHeaderImg{
+        width: 30px;
+        float: right;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px gray;
+    }
+    #PopupHeaderImg:hover{
+        width: 30px;
+        float: right;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px black;
+    }
+    #OrderForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .labeledField{
+        margin: 5px;
+    }
+    .field{
+        border: 2px solid black;
+        position: relative;
+        float: right;
+        width: 70%;
+    }
+    .fieldSel{
+        border: 2px solid black;
+        position: relative;
+        float: right;
+        margin-right: 45%;
+        width: 25%;
+    }
+    .HiddenField{
+        display: none;
+    }
+    .PopupFinHidden{
+        display: none;
+    }
+    #FinPopupBG{
+        position: fixed;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #FinPopup{
+        display: flex;
+        padding: 10px;
+        border: 3px solid black;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+        left: 37.5%;
+        top: 44%;
+        width: 25%;
+        height: 12%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    * {
+    padding: 0px;
+    margin: 0px;    /*Отключение стандартного офрмления*/
+    border: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; /*Лучший шрифт*/
+}
+header {
+    background-color: aquamarine;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*растягиваем тело так, чтобы не оставалось свободного места внизу*/
+}
+nav {
+    border-bottom: 3px solid black;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: 100vw;
+}
+
+#InfLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    /*border-bottom: 3px solid black;
+    border-top: 3px solid black;*/
+}
+#Links {
+    display: flex;
+    gap: 45px;
+    justify-content: flex-start;
+}
+
+#Links a {
+    text-decoration: none;
+}
+
+#Links a:hover {
+    color: blue;
+}
+.curr {
+    color:black;
+}
+
+.frst {
+    color:blueviolet;
+}
+#PgNav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+#PgNav a:hover {
+    color: blue;
+}
+main {
+    flex-grow: 1; /*Растягивание в высоту основной части*/
+    display: flex;
+}
+.MainHeading {
+    text-shadow: 3px 3px 3px gray;
+    text-decoration: underline;
+}
+.NotSoMainHeading {
+    text-shadow: 1px 1px 1px gray;
+    text-decoration: underline;
+}
+#PgNav {
+    border-right: 3px solid black;
+    padding: 10px;
+    min-width: 150px;
+}
+#MainTxt {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.Exmpls{
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 18vw;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.Exmpl{
+    margin: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/*#Exmpl1 {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+#Exmpl2 {
+    grid-row: 1;
+    grid-column: 3/5;
+}
+#Exmpl3 {
+    grid-row: 2;
+    grid-column: 2/4;
+}*/
+.Exmpl:hover {
+    background-color: lightgray;
+}
+.ExmplsImg {
+    width: 30vw;  
+}
+.ExmplTtl{
+        margin: 5px;
+    }
+.OrderButton{
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    border: 2px solid black;
+    background-color: lightgray;
+    box-shadow: 3px 3px 3px gray;
+    cursor: pointer;
+}
+.OrderButton:hover{
+    padding: 5px;
+    margin: 5px;
+    margin-top: 0px;
+    border: 2px solid black;
+    background-color: gray;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#Intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    border-top: 3px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#FooterTxt {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#FooterLogo {
+    width: 40px;
+    float: right;
+}
+.PopupHidden{
+    display: none;
+}
+#OrderPopupBG{
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#OrderPopup{
+    padding: 10px;
+    border: 3px solid black;
+    position: fixed;
+    overflow: auto;
+    background-color: white;
+    z-index: 2;
+    left: 20%;
+    top: 15%;
+    width: 60%;
+    height: fit-content;
+    overflow: auto;
+}
+#PopupHeader{
+    display: flex;
+}
+#PopupHeaderTxt{
+    flex-grow: 1;
+}
+#PopupHeaderImg{
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px gray;
+}
+#PopupHeaderImg:hover{
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#OrderForm{
+    display: flex;
+    flex-direction: column;
+}
+.labeledField{
+    margin: 5px;
+}
+.field{
+    border: 2px solid black;
+    position: relative;
+    float: right;
+    width: 75%;
+}
+.fieldSel{
+    border: 2px solid black;
+    position: relative;
+    float: right;
+    margin-right: 50%;
+    width: 25%;
+}
+.HiddenField{
+    display: none;
+}
+.PopupFinHidden{
+    display: none;
+}
+#FinPopupBG{
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#FinPopup{
+    display: flex;
+    padding: 10px;
+    border: 3px solid black;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    left: 37.5%;
+    top: 44%;
+    width: 25%;
+    height: 12%;
+    flex-direction: column;
+}
+}

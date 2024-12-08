@@ -1,0 +1,243 @@
+#lecTable {
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+@media screen and (max-width: 500px) {
+    * {
+        padding: 0px;
+        margin: 0px;    /*Отключение стандартного офрмления*/
+        border: none;
+        font-family: "Comic Sans MS", "Comic Sans", cursive; /*Лучший шрифт*/
+    }
+    header {
+        background-color: aquamarine;
+        padding: 30px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid black;
+    }
+    #InfLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        border-bottom: 3px solid black;
+        padding: 5px;
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        width: 100vw;
+    }
+    #PgNav a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    #PgNav a:hover {
+        color: blue;
+    }
+    main {
+        flex-grow: 1; /*Растягивание в высоту основной части*/
+    }
+    .MainHeading {
+        text-shadow: 3px 3px 3px gray;
+        text-decoration: underline;
+    }
+    .NotSoMainHeading {
+        text-shadow: 1px 1px 1px gray;
+        text-decoration: underline;
+    }
+    #PgNav {
+        border-bottom: 3px solid black;
+        padding: 5px;
+    }
+    #MainTxt {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /*Растягивание в ширину текстовой части*/
+    }
+    .MainTxtVid {
+        padding: 10px;
+        width: 100%;
+    }
+    footer {
+        border-top: 3px solid black;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    #FooterTxt {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    #FooterLogo {
+        width: 40px;
+        float: right;
+    } 
+    .TableMain{
+        border-collapse: collapse;
+        border: 3px solid black;
+        width: fit-content;
+    }
+    th, td{
+        padding-left: 5px;
+    }
+    .TableMainRow{
+        background-color: dimgray;
+        padding-left: 10 px;
+    }
+    .TableOddRow{
+        background-color: lightgray;
+    }
+    .TableNonOddRow{
+        background-color: darkgray;
+    }
+    .TableOddRow:hover{
+        background-color: darkgray;
+        border: 1px solid black;
+    }
+    .TableNonOddRow:hover{
+        background-color: gray;
+        border: 1px solid black;
+    }
+    .map{
+        width: 100%;
+    }
+    #pdffile {
+        height: 375px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    * {
+    padding: 0px;
+    margin: 0px;    /*Отключение стандартного офрмления*/
+    border: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; /*Лучший шрифт*/
+}
+header {
+    background-color: aquamarine;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*растягиваем тело так, чтобы не оставалось свободного места внизу*/
+}
+nav {
+    border-bottom: 3px solid black;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: 100vw;
+}
+
+#InfLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    /*border-bottom: 3px solid black;
+    border-top: 3px solid black;*/
+}
+#Links {
+    display: flex;
+    gap: 45px;
+    justify-content: flex-start;
+}
+
+#Links a {
+    text-decoration: none;
+}
+#Links a:hover {
+    color: blue;
+}
+
+.curr {
+    color:black;
+}
+
+.frst {
+    color:blueviolet;
+}
+#PgNav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+#PgNav a:hover {
+    color: blue;
+}
+
+main {
+    flex-grow: 1; /*Растягивание в высоту основной части*/
+    display: flex;
+}
+.MainHeading {
+    text-shadow: 3px 3px 3px gray;
+    text-decoration: underline;
+}
+.NotSoMainHeading {
+    text-shadow: 1px 1px 1px gray;
+    text-decoration: underline;
+}
+#PgNav {
+    border-right: 3px solid black;
+    padding: 10px;
+    min-width: 150px;
+}
+#MainTxt {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /*Растягивание в ширину текстовой части*/
+}
+.TableMain{
+    border-collapse: collapse;
+    border: 3px solid black;
+    width: fit-content;
+}
+th, td{
+    padding-left: 5px;
+}
+.TableMainRow{
+    background-color: dimgray;
+    padding-left: 10 px;
+}
+.TableOddRow{
+    background-color: lightgray;
+}
+.TableNonOddRow{
+    background-color: darkgray;
+}
+.TableOddRow:hover{
+    background-color: darkgray;
+    border: 1px solid black;
+}
+.TableNonOddRow:hover{
+    background-color: gray;
+    border: 1px solid black;
+}
+.document {
+    border: 3px solid black;
+}
+footer {
+    border-top: 3px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#FooterTxt {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#FooterLogo {
+    width: 40px;
+    float: right;
+}
+}

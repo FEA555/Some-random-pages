@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возможно, Document</title>
+    <link rel="stylesheet" href="Style0_2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="InfLogo">
+            <div>
+                <img src="Барс.jpg" alt="Брс" width="50px">
+                <p>Logo</p>
+            </div>
+            <div>
+                <p>Группа ЭФБО-05-23</p>
+                <p>Фокин Владимир Евгеньевич</p>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="FVE1.html">Главная</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Учеба</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item nav-link" href="FVE3.html">Первый семестр</a></li>
+                  <li><a class="dropdown-item nav-link disabled" href="#">Второй семестр</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Авторизация</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <div id="PgNav">
+            <ul> Навигация <br>по странице:
+                <li><a href="#Order">Заказать</a></li>
+                <li><a href="#About">Описание</a></li>
+            </ul>
+        </div>
+
+        <div id="MainTxt">
+            <h2 class="NotSoMainHeading" id="Order">Разработка веб-приложений.</h2>
+            <div class="container px-4 text-center">
+                <div class="row">
+                    <div class="Exmpl col-5" id="Exmpl1">
+                        <img class="ExmplsImg" src="VisitCardWP.png" alt="placeholder">
+                        <h4 class="ExmplTtl">Сайт-визитка</h4>
+                        <p class="ExmplTxt">Это, наверное, сайт</p>
+                        <button class="OrderButton OrderButton1" onclick="OrderPopup">Заказать</button>
+                    </div>
+                    <div class="Exmpl col-5" id="Exmpl2">
+                        <img class="ExmplsImg" src="CorpoWP.png" alt="placeholder">
+                        <h4 class="ExmplTtl">Корпоративный сайт</h4>
+                        <p class="ExmplTxt">Это, наверное, сайт</p>
+                        <button class="OrderButton OrderButton2" type="button">Заказать</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="Exmpl col-5" id="Exmpl3">
+                        <img class="ExmplsImg" src="InternetShopWP.jpg" alt="placeholder">
+                        <h4 class="ExmplTtl">Интернет-магазин</h4>
+                        <p class="ExmplTxt">Это, наверное, сайт</p>
+                        <button class="OrderButton OrderButton3" type="button">Заказать</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="About">
+                <h3>О разработке:</h3>
+                <p>Много текста, очень много текста, здесь на макете прям море текста, но у меня столько выдумать не выходит, к сожалению.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div id="FooterTxt">&copy; Фокин Владимир Евгеньевич, 2024</div> 
+        <a href="http://www.vk.com/fea555"> <img id="FooterLogo" src="VKLogo.png"> </a>
+    </footer>
+
+    <div id="OrderPopupBG" class="PopupHidden">
+    <div id="OrderPopup">
+        <div id="PopupHeader">
+            <div id="PopupHeaderTxt">
+                <h2>Разработка веб-приложения</h2>
+            </div>
+            <button id="CloseButton" type="button"><img id="PopupHeaderImg" src="CloseButton.png"></button>
+        </div>
+        
+        <p>Пожалуйста, заполните формы, и мы свяжемся с Вами в ближайшее время для обсуждения деталей:</p>
+        <form id="OrderForm" onsubmit="validateForm()">
+            <div class="labeledField"><label for="Name">Ваше имя:</label>
+            <input type="text" id="Name" name="Name" class="field" placeholder="Иванов Иван Иванович" required></div>
+            <div class="labeledField"><label for="Email">Ваш e-mail:</label>
+            <input type="email" id="Email" name="Email" class="field" placeholder="example@mail.com" required></div>
+            <div class="labeledField"><label for="PhoneNum">Телефон:</label>
+            <input type="tel" id="PhoneNum" name="PhoneNum" class="field" placeholder="+7(000)000-00-00"></div>
+            <div class="labeledField"><label for="Country">Страна:</label>
+            <select id="Country" name="Country" class="fieldSel">
+                <option>Россия</option>
+                <option>Не Россия</option>
+            </select></div>
+            <div class="labeledField"><label for="Date">Дата:</label>
+            <input type="date" id="Date" name="Date" class="fieldSel"></div>
+            <div class="labeledField"><label for="Comment">Комментарий:</label>
+            <textarea id="Comment" name="Comment"class="field"></textarea></div>
+            <div class="labeledField"><input type="checkbox" id="Check" name="Check" required>
+            <label for="Check">Я согласен на обработку персональных данных</label></div>
+            <button type="submit" class="OrderButton labeledField OrderButtonFin" id="OrderSubmitButton">Отправить</button>
+            <input type="text" id="HiddenField1" class="HiddenField">
+        </form>
+    </div>
+    </div>
+
+    <div id="FinPopupBG" class="PopupFinHidden">
+        <div id="FinPopup">
+            <h2>Спасибо за заказ!</h2>
+            <button type="button" class="OrderButton FinButtonFin">Оk.</button>
+        </div>
+    </div>
+    <script src="Scripts2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
